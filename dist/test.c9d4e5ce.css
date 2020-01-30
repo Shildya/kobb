@@ -1,0 +1,59 @@
+.image1 {
+  position: absolute;
+  width: 425px;
+  height: 425px;
+}
+
+.color {
+  width: 425px;
+  height: 425px;
+  position: absolute;
+  mix-blend-mode: hue;
+  background-color: red;
+}
+
+.color2 {
+  width: 425px;
+  height: 425px;
+  position: absolute;
+  mix-blend-mode: hue;
+  background-color: red;
+}
+
+.hue {
+  background-image: linear-gradient(to right, red, gold, green, cyan, blue, purple, fuchsia);
+  border-radius: 60px;
+  border-style: solid;
+  border-width: thin;
+  width: 200px;
+}
+
+#hue__input {
+  width: 195px;
+  height: 10px;
+  background: transparent;
+  border-color: transparent;
+  -webkit-appearance: none;
+}
+
+.saturate {
+  background-image: linear-gradient(to right, gray, red);
+  border-radius: 60px;
+  border-style: solid;
+  border-width: thin;
+  width: 200px;
+}
+
+#saturate__input {
+  width: 195px;
+  height: 10px;
+  background: transparent;
+  border-color: transparent;
+  -webkit-appearance: none;
+}
+
+.hue__container {
+  margin-top: 500px;
+}
+
+/*# sourceMappingURL=/test.c9d4e5ce.css.map */
