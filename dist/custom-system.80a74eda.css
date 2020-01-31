@@ -10,6 +10,10 @@
   height: 425px;
 }
 
+.custom-system__container {
+  display: table;
+}
+
 .image1 {
   position: absolute;
   width: 425px;
