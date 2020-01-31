@@ -12,16 +12,8 @@
   background-color: red;
 }
 
-.color2 {
-  width: 425px;
-  height: 425px;
-  position: absolute;
-  mix-blend-mode: hue;
-  background-color: red;
-}
-
-.hue {
-  background-image: linear-gradient(to right, red, gold, green, cyan, blue, purple, fuchsia);
+.hue__bar {
+  background-image: linear-gradient(to right, red, magenta, blue, cyan, green, yellow, red);
   border-radius: 60px;
   border-style: solid;
   border-width: thin;
@@ -36,7 +28,7 @@
   -webkit-appearance: none;
 }
 
-.saturate {
+.saturate__bar {
   background-image: linear-gradient(to right, gray, red);
   border-radius: 60px;
   border-style: solid;
