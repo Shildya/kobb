@@ -2,8 +2,8 @@
 
 @mixin imgSize {
     position: absolute;
-    width: 425px;
-    height: 425px;
+    width: 375px;
+    height: 375px;
 }
 
 @mixin inputStyle {
@@ -33,12 +33,14 @@
 }
 
 .img__container {
-    width: 425px;
-    height: 425px;
+    width: 375px;
+    height: 375px;
 }
 
 .custom-system__container {
-    display: table
+    margin-top: 20px;
+    display: table;
+    text-align: center;
 }
 
 
@@ -85,4 +87,11 @@
 .luminosity__bar {
     background-image: linear-gradient(to left, white, black);
     @include barStyle;
+}
+
+// TEXT //
+
+.arrow {
+    color: gray;
+    cursor: pointer;
 }
