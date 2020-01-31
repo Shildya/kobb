@@ -1,30 +1,43 @@
-document.addEventListener('DOMContentLoaded', function(event){
+document.addEventListener('DOMContentLoaded', function(event) {
 
-    hue = document.querySelector('#hue__input');
+    // HUE SYSTEM //
 
+    hueInput = document.querySelector('#hue__input');
     color = document.querySelector('.color');
 
-    saturate_box = document.querySelector('.saturate');
+    hueInput.addEventListener('input', function() {
+        if (hueInput.value < 256) {
+            color.style.backgroundColor = 'rgb(255, 0, '+hueInput.value+')';
+        }
+        else if (255 < hueInput.value && hueInput.value < 511) {
+            color.style.backgroundColor = 'rgb('+(510-hueInput.value)+', 0, 255)';
+        }
+        else if (510 < hueInput.value && hueInput.value < 766) {
+            color.style.backgroundColor = 'rgb(0,'+(hueInput.value-510)+', 255)';
+        }
+        else if (765 < hueInput.value && hueInput.value < 1021) {
+            color.style.backgroundColor = 'rgb(0, 255,'+(1020-hueInput.value)+')';
+        }
+        else if (1020 < hueInput.value && hueInput.value < 1276) {
+            color.style.backgroundColor = 'rgb('+(hueInput.value-1020)+', 255, 0)';
+        }
+        else if (1275 < hueInput.value && hueInput.value < 1530) {
+            color.style.backgroundColor = 'rgb(255,'+(1530-hueInput.value)+', 0)';
+        };
 
-    saturate = document.querySelector('#saturate__input');
+        // SATURATION BAR COLOR CHANGE //
 
+        saturateBar.style.backgroundImage = 'linear-gradient(to right, gray, '+color.style.backgroundColor+')'
+    });
+
+    // SATURATION SYSTEM //
+
+    saturateInput = document.querySelector('#saturate__input');
+    saturateBar = document.querySelector('.saturate__bar');
     image1 = document.querySelector('.image1');
 
-    color.style.backgroundcolor = 'red';
-
-    hue.addEventListener('input', function (evt) {
-        color.style.filter = 'hue-rotate(' + hue.value + 'deg)';
-        saturate_box.style.filter = 'hue-rotate(' + hue.value + 'deg)';
-    });
-    
-    saturate.addEventListener('input', function (evt) {
-        image1.style.filter = 'saturate(' + saturate.value + '%)'
-        if (image1.style.filter == 'saturate(0%)') {
-            color.style.backgroundColor = 'black';
-        }
-        else {
-            color.style.backgroundColor = 'red';
-        };
+    saturateInput.addEventListener('input', function() {
+        image1.style.filter = 'saturate('+saturateInput.value+'%)';
     });
 
 });
