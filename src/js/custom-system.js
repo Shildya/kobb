@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         else {
             image1_black.style.opacity = 0;
-            image_white.style.opacity = 0;
+            image1_white.style.opacity = 0;
         }
     });
 

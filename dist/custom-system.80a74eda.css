@@ -1,3 +1,15 @@
+.customization__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img__container {
+  width: 425px;
+  height: 425px;
+}
+
 .image1 {
   position: absolute;
   width: 425px;
@@ -5,12 +17,26 @@
   filter: saturate(1.25);
 }
 
+.image1-black, .image1-white {
+  position: absolute;
+  width: 425px;
+  height: 425px;
+  opacity: 0;
+}
+
 .color {
   position: absolute;
   width: 425px;
   height: 425px;
   mix-blend-mode: hue;
-  background-color: red;
+}
+
+#hue__input, #saturate__input, #luminosity__input {
+  width: 195px;
+  height: 10px;
+  background: transparent;
+  border-color: transparent;
+  -webkit-appearance: none;
 }
 
 .hue__bar {
@@ -21,14 +47,6 @@
   width: 200px;
 }
 
-#hue__input {
-  width: 195px;
-  height: 10px;
-  background: transparent;
-  border-color: transparent;
-  -webkit-appearance: none;
-}
-
 .saturate__bar {
   background-image: linear-gradient(to right, gray, red);
   border-radius: 60px;
@@ -37,46 +55,12 @@
   width: 200px;
 }
 
-#saturate__input {
-  width: 195px;
-  height: 10px;
-  background: transparent;
-  border-color: transparent;
-  -webkit-appearance: none;
-}
-
-.hue__container {
-  margin-top: 500px;
-}
-
-#luminosity__input {
-  width: 195px;
-  height: 10px;
-  background: transparent;
-  border-color: transparent;
-  -webkit-appearance: none;
-}
-
 .luminosity__bar {
   background-image: linear-gradient(to left, white, black);
   border-radius: 60px;
   border-style: solid;
   border-width: thin;
   width: 200px;
-}
-
-.image1-black {
-  position: absolute;
-  width: 425px;
-  height: 425px;
-  opacity: 0;
-}
-
-.image1-white {
-  position: absolute;
-  width: 425px;
-  height: 425px;
-  opacity: 0;
 }
 
 /*# sourceMappingURL=/custom-system.80a74eda.css.map */
