@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', function() {
 
     // HUE SYSTEM //
 
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
         // SATURATION BAR COLOR CHANGE //
 
-        saturateBar.style.backgroundImage = 'linear-gradient(to right, gray, '+color.style.backgroundColor+')'
+        saturateBar.style.backgroundImage = 'linear-gradient(to right, gray, '+color.style.backgroundColor+')';
     });
 
     // SATURATION SYSTEM //
