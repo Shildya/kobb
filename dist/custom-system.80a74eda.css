@@ -6,32 +6,34 @@
 }
 
 .img__container {
-  width: 425px;
-  height: 425px;
+  width: 375px;
+  height: 375px;
 }
 
 .custom-system__container {
+  margin-top: 20px;
   display: table;
+  text-align: center;
 }
 
 .image1 {
   position: absolute;
-  width: 425px;
-  height: 425px;
+  width: 375px;
+  height: 375px;
   filter: saturate(1.25);
 }
 
 .image1-black, .image1-white {
   position: absolute;
-  width: 425px;
-  height: 425px;
+  width: 375px;
+  height: 375px;
   opacity: 0;
 }
 
 .color {
   position: absolute;
-  width: 425px;
-  height: 425px;
+  width: 375px;
+  height: 375px;
   mix-blend-mode: hue;
 }
 
@@ -65,6 +67,11 @@
   border-style: solid;
   border-width: thin;
   width: 200px;
+}
+
+.arrow {
+  color: gray;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=/custom-system.80a74eda.css.map */
