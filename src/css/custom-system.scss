@@ -1,13 +1,15 @@
-.image1 {
+@mixin imgSize {
     position: absolute;
     width: 425px;
     height: 425px;
+}
+
+.image1 {
+    @include imgSize;
     filter: saturate(1.25);
 }
 .color {
-    width: 425px;
-    height: 425px;
-    position: absolute;
+    @include imgSize;
     mix-blend-mode: hue;
     background-color: red;
 }
@@ -46,4 +48,30 @@
 
 .hue__container {
     margin-top: 500px;
+}
+
+#luminosity__input {
+    width: 195px;
+    height: 10px;
+    background: transparent;
+    border-color: transparent;
+    -webkit-appearance: none;
+}
+
+.luminosity__bar {
+    background-image: linear-gradient(to left, white, black);
+    border-radius: 60px;
+    border-style: solid;
+    border-width: thin;
+    width: 200px;
+}
+
+.image1-black {
+    @include imgSize;
+    opacity: 0;
+}
+
+.image1-white {
+    @include imgSize;
+    opacity: 0;
 }

@@ -6,9 +6,9 @@
 }
 
 .color {
+  position: absolute;
   width: 425px;
   height: 425px;
-  position: absolute;
   mix-blend-mode: hue;
   background-color: red;
 }
@@ -47,6 +47,36 @@
 
 .hue__container {
   margin-top: 500px;
+}
+
+#luminosity__input {
+  width: 195px;
+  height: 10px;
+  background: transparent;
+  border-color: transparent;
+  -webkit-appearance: none;
+}
+
+.luminosity__bar {
+  background-image: linear-gradient(to left, white, black);
+  border-radius: 60px;
+  border-style: solid;
+  border-width: thin;
+  width: 200px;
+}
+
+.image1-black {
+  position: absolute;
+  width: 425px;
+  height: 425px;
+  opacity: 0;
+}
+
+.image1-white {
+  position: absolute;
+  width: 425px;
+  height: 425px;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=/custom-system.80a74eda.css.map */
