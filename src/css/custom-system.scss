@@ -1,77 +1,84 @@
+// MIXINS //
+
 @mixin imgSize {
     position: absolute;
     width: 425px;
     height: 425px;
 }
 
+@mixin inputStyle {
+    width: 195px;
+    height: 10px;
+    background: transparent;
+    border-color: transparent;
+    -webkit-appearance: none;
+}
+
+@mixin barStyle {
+    border-radius: 60px;
+    border-style: solid;
+    border-width: thin;
+    width: 200px;
+}
+
+
+// CONTAINERS //
+
+.customization__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.img__container {
+    width: 425px;
+    height: 425px;
+}
+
+
+// IMAGES //
+
 .image1 {
     @include imgSize;
     filter: saturate(1.25);
 }
+
+.image1-black, .image1-white {
+    @include imgSize;
+    opacity: 0;
+}
+
+
+// COLOR LAYERS //
+
 .color {
     @include imgSize;
     mix-blend-mode: hue;
-    background-color: red;
 }
+
+
+// INPUTS //
+
+#hue__input, #saturate__input, #luminosity__input {
+    @include inputStyle;
+}
+
+
+// BARS //
 
 .hue__bar {
     background-image: linear-gradient(to right, red, magenta, blue, cyan, green, yellow, red);
-    border-radius: 60px;
-    border-style: solid;
-    border-width: thin;
-    width: 200px;
-}
-
-#hue__input {
-    width: 195px;
-    height: 10px;
-    background: transparent;
-    border-color: transparent;
-    -webkit-appearance: none;
+    @include barStyle;
 }
 
 .saturate__bar {
     background-image: linear-gradient(to right, gray, red);
-    border-radius: 60px;
-    border-style: solid;
-    border-width: thin;
-    width: 200px;
-}
-
-#saturate__input {
-    width: 195px;
-    height: 10px;
-    background: transparent;
-    border-color: transparent;
-    -webkit-appearance: none;
-}
-
-.hue__container {
-    margin-top: 500px;
-}
-
-#luminosity__input {
-    width: 195px;
-    height: 10px;
-    background: transparent;
-    border-color: transparent;
-    -webkit-appearance: none;
+    @include barStyle
 }
 
 .luminosity__bar {
     background-image: linear-gradient(to left, white, black);
-    border-radius: 60px;
-    border-style: solid;
-    border-width: thin;
-    width: 200px;
-}
-
-.image1-black {
-    @include imgSize;
-    opacity: 0;
-}
-
-.image1-white {
-    @include imgSize;
-    opacity: 0;
+    @include barStyle;
 }
