@@ -57,7 +57,21 @@ header {
     }
 }
 
-#header-logo {
+// #header-logo {
+//     height: 28px;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     cursor: pointer;
+//     fill: white;
+    
+//     a:hover & {
+//         fill: gray;
+//     }
+// }
+
+.header-logo {
     height: 28px;
     position: absolute;
     top: 50%;
@@ -70,4 +84,5 @@ header {
         fill: gray;
     }
 }
+
 
