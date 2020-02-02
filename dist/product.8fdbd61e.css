@@ -1,15 +1,25 @@
 .product__section {
   width: auto;
-  height: 126vh;
+  height: calc(100% - 48px);
   position: relative;
+  background-color: red;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .product-background {
-  min-width: 100%;
-  height: 100%;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  position: absolute;
+}
+
+body {
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 /*# sourceMappingURL=/product.8fdbd61e.css.map */
