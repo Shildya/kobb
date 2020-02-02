@@ -2,7 +2,6 @@
     width: auto;
     height: calc(100% - 48px);
     position: relative;
-    background-color: red;
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
@@ -30,10 +29,10 @@
     bottom: 0;
     height: 80%;
 
-    animation: 10.8s linear 0s infinite alternate move_eye;
+    animation: 10.8s linear 0s infinite alternate color_change;
 }
 
-@keyframes move_eye { 
+@keyframes color_change { 
     from { 
         filter: hue-rotate(0deg); 
     }
