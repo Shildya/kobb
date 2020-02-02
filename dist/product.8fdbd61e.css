@@ -1,0 +1,15 @@
+.product__section {
+  width: auto;
+  height: 126vh;
+  position: relative;
+}
+
+.product-background {
+  min-width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+/*# sourceMappingURL=/product.8fdbd61e.css.map */
