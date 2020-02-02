@@ -117,55 +117,74 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../js/custom-system.js":[function(require,module,exports) {
-document.addEventListener('DOMContentLoaded', function () {
-  // HUE SYSTEM //
-  hueInput = document.querySelector('#hue__input');
-  color = document.querySelector('.color');
-  hueInput.addEventListener('input', function () {
-    if (hueInput.value < 256) {
-      color.style.backgroundColor = 'rgb(255, 0, ' + hueInput.value + ')';
-    } else if (255 < hueInput.value && hueInput.value < 511) {
-      color.style.backgroundColor = 'rgb(' + (510 - hueInput.value) + ', 0, 255)';
-    } else if (510 < hueInput.value && hueInput.value < 766) {
-      color.style.backgroundColor = 'rgb(0,' + (hueInput.value - 510) + ', 255)';
-    } else if (765 < hueInput.value && hueInput.value < 1021) {
-      color.style.backgroundColor = 'rgb(0, 255,' + (1020 - hueInput.value) + ')';
-    } else if (1020 < hueInput.value && hueInput.value < 1276) {
-      color.style.backgroundColor = 'rgb(' + (hueInput.value - 1020) + ', 255, 0)';
-    } else if (1275 < hueInput.value && hueInput.value < 1530) {
-      color.style.backgroundColor = 'rgb(255,' + (1530 - hueInput.value) + ', 0)';
+})({"../../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
     }
 
-    ; // SATURATION BAR COLOR CHANGE //
+    cssTimeout = null;
+  }, 50);
+}
 
-    saturateBar.style.backgroundImage = 'linear-gradient(to right, gray, ' + color.style.backgroundColor + ')';
-  }); // SATURATION SYSTEM //
-
-  saturateInput = document.querySelector('#saturate__input');
-  saturateBar = document.querySelector('.saturate__bar');
-  image1 = document.querySelector('.image1');
-  saturateInput.addEventListener('input', function () {
-    image1.style.filter = 'saturate(' + saturateInput.value + '%)';
-  }); // LUMINOSITY SYSTEM //
-
-  luminosityInput = document.querySelector('#luminosity__input');
-  image1_black = document.querySelector('.image1-black');
-  image1_white = document.querySelector('.image1-white');
-  luminosityInput.addEventListener('input', function () {
-    if (luminosityInput.value < 0) {
-      image1_black.style.opacity = luminosityInput.value / -100;
-      image1_white.style.opacity = 0;
-    } else if (luminosityInput.value > 0) {
-      image1_white.style.opacity = luminosityInput.value / 100;
-      image1_black.style.opacity = 0;
-    } else {
-      image1_black.style.opacity = 0;
-      image1_white.style.opacity = 0;
-    }
-  });
-});
-},{}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+module.exports = reloadCSS;
+},{"./bundle-url":"../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -369,5 +388,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../js/custom-system.js"], null)
-//# sourceMappingURL=/custom-system.ab0acc23.js.map
+},{}]},{},["../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/index.js.map
