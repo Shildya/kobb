@@ -50,7 +50,7 @@ header {
   transform: translateY(0px) rotate(-45deg);
 }
 
-#header-logo {
+.header-logo {
   height: 28px;
   position: absolute;
   top: 50%;
@@ -59,7 +59,7 @@ header {
   cursor: pointer;
   fill: white;
 }
-a:hover #header-logo {
+a:hover .header-logo {
   fill: gray;
 }
 
