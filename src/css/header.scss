@@ -1,102 +1,77 @@
-// header {
-//     position: fixed;
-//     width: 100%;
-//     height: 48px;
-//     background-color: black;
-//     top: 0;
-//     z-index: 999;
-// }
-
-.burger-menu {
-    width: 24px;
-    height: 28px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 14px;
-    cursor: pointer;
-
-    &:hover span {
-        background-color: gray;
-
-        &::before, &::after {
-            background-color: gray;
-        }
-    }
-
-    & span {
-        width: 100%;
-        height: 2px;
-        background-color: white;
-        display: block;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-
-        &::before, &::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            transition: transform 0.3s ease-in-out;
-
-            span:hover & {
-                background-color: gray;
-            }
-        }
-
-        &::before {
-            transform: translateY(-8px);
-        }
-
-        &::after {
-            transform: translateY(8px);
-        }
-    }
-
-    &.isOpen span {
-        background-color: transparent;
-
-        &::before {
-            transform: translateY(0px) rotate(45deg);
-        }
-
-        &::after {
-            transform: translateY(0px) rotate(-45deg);
-        }
-    }
-}
-
-.header-logo {
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid black;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .header__logo {
     height: 28px;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
+    transform: translateY(-50%);
+    margin-left: 10px;
     cursor: pointer;
-    fill: white;
+    fill: black;
     
     a:hover & {
         fill: gray;
     }
-}
-
-.login-icon, .cart-icon {
-    height: 24px;
+  }
+  
+  .header__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+  
+  .header__sepline {
+    width: 26px;
+    height: 0px;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+  }
+  
+  .header__link {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    
+    &:hover {
+      color: gray;
+    }
+  }
+  
+  .login-icon, .cart-icon {
+    height: 28px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
     margin-right: 18px;
-    fill: white;
+    fill: black;
     cursor: pointer;
-
+  
     &:hover {
         fill: gray;
     }
-}
-
-.login-icon {
-    margin-right: 54px;
-}
+  }
+  
+  .login-icon {
+    margin-right: 60px;
+  }

@@ -1,139 +1,128 @@
-header {
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  background-color: white;
-  border-bottom: 2px solid black;
-  top: 0;
-  z-index: 999;
-}
-
-.header__logo {
-  height: 24px;
-  margin-left: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.header__title {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  width: 65%;
-  top: 50%;
+.product__section {
+  width: auto;
+  height: calc(100% - 48px);
+  position: relative;
+  overflow: hidden;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
-.header__line {
-  width: 26px;
-  height: 0px;
-  border: 1px solid #000000;
-  transform: rotate(90deg);
-}
-
-.header__link {
-  font-family: AdiHaus;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 25px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
-}
-
-.icons__container {
-  display: flex;
-  justify-content: space-between;
-  width: 70px;
-  height: 28px;
-  margin-right: 10px;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.presentation {
-  height: 94%;
-  width: 100vw;
-  background-image: url(/background_home_page.fb51e352.png);
-  background-size: cover;
+.dude {
+  position: absolute;
+  right: calc(20% - 10vh);
+  bottom: 0;
+  height: 80%;
 }
 
-.presentation__title {
-  display: flex;
-  align-items: center;
-  height: 111px;
-  width: 509px;
-  padding: 91px 0 0 71px;
+.product {
+  position: absolute;
+  right: calc(20% - 10vh);
+  bottom: 0;
+  height: 80%;
+}
+.product.loaded {
+  animation: colorChange 8s ease 0s infinite;
 }
 
-.title__text {
-  margin: 0;
-  background-color: black;
-  font-family: AdiHaus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 50px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 10px;
+@keyframes colorChange {
+  17% {
+    filter: hue-rotate(120deg);
+  }
+  33% {
+    filter: hue-rotate(120deg);
+  }
+  50% {
+    filter: hue-rotate(240deg);
+  }
+  67% {
+    filter: hue-rotate(240deg);
+  }
+  83% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.kobb-vest {
+  position: absolute;
+  width: 35%;
+  left: 5vw;
+  top: 15%;
 }
 
-.title__text--rotation {
-  transform: rotate(-90deg);
-  font-size: 24px;
-  padding: 7px;
-}
-
-.title__image {
-  background-color: #ffffff;
-  padding: 10px;
-}
-
-.presentation__accroche {
-  padding: 20px;
-  width: 538px;
-  height: 138px;
+.slogan {
+  position: absolute;
+  padding: 15px 20px;
+  width: 40%;
+  height: fit-content;
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  font-size: 56px;
-  line-height: 69px;
+  font-size: 4.5vw;
   color: #ffffff;
   background-color: black;
-  margin-left: 71px;
+  left: 5vw;
+  top: calc(5vw + 25%);
+  flex-wrap: wrap;
 }
 
 .link {
   padding: 95px 0 0 71px;
 }
 
-.link___button {
+.presentation__buttons {
+  position: absolute;
+  top: calc(5vw + 60%);
+  left: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 585px;
+}
+@media (max-width: 760px) {
+  .presentation__buttons {
+    top: 55%;
+    display: block;
+  }
+}
+
+.button {
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  line-height: 37px;
   background: #ffffff;
-  font-size: 30px;
+  font-size: 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  padding: 18px 36px;
+  padding: 12px 20px;
   text-decoration: none;
   color: #000000;
+  border: none;
+  text-align: center;
 }
 
-.link___button--perso {
+.customize__button {
   color: #ffffff;
   background-color: #02b2fe;
+}
+
+.learn-more__button {
+  margin-left: 3vw;
+}
+@media (max-width: 760px) {
+  .learn-more__button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .presentation__eco {
