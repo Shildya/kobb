@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"../js/burger-menu.js":[function(require,module,exports) {
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', function () {
   burgerMenu = document.querySelector('.burger-menu');
   menu = document.querySelector('.menu');
   burgerMenu.addEventListener('click', function () {
@@ -161,7 +161,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64326" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65158" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
