@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../css/reset.css":[function(require,module,exports) {
+},{"./bundle-url":"../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../css/fonts.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../fonts/adihaus_regular.ttf":[["adihaus_regular.390a3cdd.ttf","../fonts/adihaus_regular.ttf"],"../fonts/adihaus_regular.ttf"],"./../fonts/adihaus_italic.ttf":[["adihaus_italic.6f8c170e.ttf","../fonts/adihaus_italic.ttf"],"../fonts/adihaus_italic.ttf"],"./../fonts/adihaus_oblique.ttf":[["adihaus_oblique.fc723e34.ttf","../fonts/adihaus_oblique.ttf"],"../fonts/adihaus_oblique.ttf"],"./../fonts/adihaus_bold.ttf":[["adihaus_bold.9f86fd77.ttf","../fonts/adihaus_bold.ttf"],"../fonts/adihaus_bold.ttf"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -394,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/reset.3abffa55.js.map
+//# sourceMappingURL=/fonts.b91656d7.js.map
