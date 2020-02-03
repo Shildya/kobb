@@ -28,6 +28,8 @@
   right: 10vw;
   bottom: 0;
   height: 80%;
+}
+.product.loaded {
   animation: 10.8s linear 0s infinite alternate color_change;
 }
 

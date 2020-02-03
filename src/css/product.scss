@@ -29,7 +29,9 @@
     bottom: 0;
     height: 80%;
 
-    animation: 10.8s linear 0s infinite alternate color_change;
+    &.loaded {
+        animation: 10.8s linear 0s infinite alternate color_change;
+    }
 }
 
 @keyframes color_change { 
