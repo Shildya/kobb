@@ -36,7 +36,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
+    height: 100%;
 }
 
 ol, ul {
@@ -123,6 +124,7 @@ html {
     font-size: 100%; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
+    height: 100%;
 }
 
 /**
@@ -365,3 +367,7 @@ textarea {
     padding: 0.2em 0;
 }
 
+main {
+    margin-top: 50px;
+    height: 100%;
+}
