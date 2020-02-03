@@ -21,6 +21,7 @@
   right: calc(20% - 10vh);
   bottom: 0;
   height: 80%;
+  filter: saturate(80%);
 }
 
 .product {
@@ -57,7 +58,7 @@
 
 .kobb-vest {
   position: absolute;
-  width: 45%;
+  width: calc(25vw + 20vh);
   left: 5vw;
   bottom: 65%;
 }
@@ -65,34 +66,29 @@
 .slogan {
   position: absolute;
   padding: 15px 20px;
-  width: 40%;
+  width: calc(25vw + 10vh);
   height: fit-content;
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  font-size: 4.5vw;
+  font-size: calc(3vw + 1vh);
   color: #ffffff;
   background-color: black;
   left: 5vw;
-  top: 37.5%;
+  top: 35vh;
   flex-wrap: wrap;
 }
 
-.link {
-  padding: 95px 0 0 71px;
-}
-
-.presentation__buttons {
-  position: absolute;
-  top: calc(5vw + 60%);
-  left: 5vw;
+.buttons__container {
   display: flex;
-  flex-wrap: wrap;
-  width: 585px;
+  position: absolute;
+  bottom: calc(2vw + 1vh);
+  left: 5%;
 
-  @media (max-width: 760px) {
-    top: 57.5%;
+  @media (max-width: 666px) and (min-height: 404px) {
     display: block;
+    top: 65%;
+    left: 10vw;
   }
 }
 
@@ -100,29 +96,33 @@
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  background: #ffffff;
-  font-size: 24px;
+  font-size: calc(2vw + 1vh);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 12px 20px;
   text-decoration: none;
-  color: #000000;
   border: none;
   text-align: center;
-}
 
-.customize__button {
-  color: #ffffff;
-  background-color: #0066ff;
-}
+  &.customize {
+    background-color: yellowgreen;
+    color: white;
 
-.learn-more__button {
-  margin-left: 3vw;
+    @media (max-width: 666px) and (min-height: 404px) {
+      margin-top: 3vh;
+    }
+  }
 
-  @media (max-width: 760px) {
-    margin-left: 0;
-    margin-top: 20px;
-  }  
+  &.learn-more {
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+
+    @media (max-width: 666px) and (min-height: 404px) {
+      margin-left: 0px;
+      margin-top: 2vh;
+    }
+  }
 }
 
 .presentation__eco {
