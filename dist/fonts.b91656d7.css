@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "AdiHaus";
+  src: url("/adihaus_regular.390a3cdd.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: url("/adihaus_italic.6f8c170e.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: url("/adihaus_oblique.fc723e34.ttf");
+  font-style: oblique;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: url("/adihaus_bold.9f86fd77.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=/fonts.b91656d7.css.map */

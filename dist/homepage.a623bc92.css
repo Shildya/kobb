@@ -55,9 +55,9 @@
 }
 .kobb-vest {
   position: absolute;
-  width: 35%;
+  width: 45%;
   left: 5vw;
-  top: 15%;
+  bottom: 65%;
 }
 
 .slogan {
@@ -72,7 +72,7 @@
   color: #ffffff;
   background-color: black;
   left: 5vw;
-  top: calc(5vw + 25%);
+  top: 37.5%;
   flex-wrap: wrap;
 }
 
@@ -90,7 +90,7 @@
 }
 @media (max-width: 760px) {
   .presentation__buttons {
-    top: 55%;
+    top: 57.5%;
     display: block;
   }
 }
@@ -112,7 +112,7 @@
 
 .customize__button {
   color: #ffffff;
-  background-color: #02b2fe;
+  background-color: #0066ff;
 }
 
 .learn-more__button {

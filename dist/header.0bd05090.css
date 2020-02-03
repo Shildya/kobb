@@ -21,6 +21,12 @@ header {
 a:hover .header__logo {
   fill: gray;
 }
+@media (max-width: 760px) {
+  .header__logo {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 
 .header__menu {
   display: flex;
@@ -32,6 +38,11 @@ a:hover .header__logo {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
+}
+@media (max-width: 760px) {
+  .header__menu {
+    visibility: hidden;
+  }
 }
 
 .header__sepline {
@@ -71,6 +82,62 @@ a:hover .header__logo {
 
 .login-icon {
   margin-right: 60px;
+}
+
+.burger-menu {
+  width: 24px;
+  height: 28px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 14px;
+  cursor: pointer;
+}
+@media (min-width: 760px) {
+  .burger-menu {
+    visibility: hidden;
+  }
+}
+.burger-menu:hover span {
+  background-color: gray;
+}
+.burger-menu:hover span::before, .burger-menu:hover span::after {
+  background-color: gray;
+}
+.burger-menu span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger-menu span::before, .burger-menu span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: transform 0.3s ease-in-out;
+}
+span:hover .burger-menu span::before, span:hover .burger-menu span::after {
+  background-color: gray;
+}
+.burger-menu span::before {
+  transform: translateY(-8px);
+}
+.burger-menu span::after {
+  transform: translateY(8px);
+}
+.burger-menu.isOpen span {
+  background-color: transparent;
+}
+.burger-menu.isOpen span::before {
+  transform: translateY(0px) rotate(45deg);
+}
+.burger-menu.isOpen span::after {
+  transform: translateY(0px) rotate(-45deg);
 }
 
 /*# sourceMappingURL=/header.0bd05090.css.map */

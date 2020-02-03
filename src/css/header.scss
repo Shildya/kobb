@@ -21,6 +21,11 @@ header {
     a:hover & {
         fill: gray;
     }
+
+    @media (max-width: 760px) {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   
   .header__menu {
@@ -33,6 +38,10 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
+
+    @media (max-width: 760px) {
+      visibility: hidden;
+    }
   }
   
   .header__sepline {
@@ -75,3 +84,68 @@ header {
   .login-icon {
     margin-right: 60px;
   }
+
+  .burger-menu {
+    width: 24px;
+    height: 28px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 14px;
+    cursor: pointer;
+
+    @media (min-width: 760px) {
+      visibility: hidden;
+    }
+
+    &:hover span {
+        background-color: gray;
+
+        &::before, &::after {
+            background-color: gray;
+        }
+    }
+
+    & span {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            transition: transform 0.3s ease-in-out;
+
+            span:hover & {
+                background-color: gray;
+            }
+        }
+
+        &::before {
+            transform: translateY(-8px);
+        }
+
+        &::after {
+            transform: translateY(8px);
+        }
+    }
+
+    &.isOpen span {
+        background-color: transparent;
+
+        &::before {
+            transform: translateY(0px) rotate(45deg);
+        }
+
+        &::after {
+            transform: translateY(0px) rotate(-45deg);
+        }
+    }
+}
