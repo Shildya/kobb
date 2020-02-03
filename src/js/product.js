@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     product = document.querySelector('.product');
-    product.classList.add('loaded');
+
+    product.addEventListener('load', function() {
+
+        product.classList.add('loaded');
+    });
     
 });
