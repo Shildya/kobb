@@ -58,29 +58,29 @@
   position: absolute;
   width: calc(25vw + 20vh);
   left: 5vw;
-  bottom: 65%;
+  bottom: 75%;
 }
 
 .slogan {
   position: absolute;
   padding: 15px 20px;
-  width: calc(25vw + 10vh);
+  width: 40vw;
   height: fit-content;
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  font-size: calc(3vw + 1vh);
-  color: #ffffff;
-  background-color: black;
-  left: 5vw;
-  top: 35vh;
-  flex-wrap: wrap;
+  font-size: 4.5vw;
+  color: white;
+  background-color: #000000;
+  left: 5%;
+  top: 30%;
+  text-justify: distribute;
 }
 
 .buttons__container {
   display: flex;
   position: absolute;
-  bottom: calc(2vw + 1vh);
+  bottom: 7.5%;
   left: 5%;
 }
 @media (max-width: 666px) and (min-height: 404px) {
@@ -97,7 +97,7 @@
   font-weight: bold;
   font-size: calc(2vw + 1vh);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 12px 20px;
   text-decoration: none;
   border: none;
@@ -124,243 +124,170 @@
   }
 }
 
-.presentation__eco {
-  margin: 45px 0 0 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: black;
-  width: 437px;
-  height: 62px;
-}
-
-.eco__text {
+.models__title {
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-}
-
-.modeles {
-  width: 100vw;
-  height: 685px;
-  display: flex;
-  flex-direction: column;
-}
-
-.modeles__title {
-  font-family: AdiHaus;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 62px;
+  font-size: 4.5vw;
   line-height: 76px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   color: #000000;
+  margin-top: 5px;
+  transform: translateY(15px);
 }
 
-.shop__produit {
+.models {
+  position: relative;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+}
+.models > * {
+  flex: 1 1 160px;
+  margin: 10px;
+}
+@media (max-width: 800px) {
+  .models {
+    display: block;
+    text-align: center;
+  }
+  .models > * {
+    display: inline-block;
+  }
 }
 
-.produit {
-  height: 417px;
-  width: 390px;
+.model__container {
+  width: 300px;
+  height: 300px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.produit__image {
-  height: 321px;
-  width: 390px;
-  background-color: #c4c4c4;
+.image__container {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.produit__text {
-  height: 96px;
-  width: 390px;
-  background-color: #c4c4c4;
+.product__image {
+  position: absolute;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.produit__title {
-  padding: 10px 0 0 10px;
-  margin: 0;
+.description__container {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+.text__container {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.product__title {
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
+  color: white;
 }
 
-.produit__description {
-  padding: 0 0 0 10px;
-  margin: 0;
+.product__description {
   font-family: AdiHaus;
   font-style: italic;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px;
-  color: #000000;
+  line-height: 18px;
+  color: white;
+  left: 10px;
+  text-align: left;
 }
 
-.adroite {
-  text-align: right;
-  padding: 0 10px 0 0;
+.buy__button__container {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.milieu {
-  text-align: center;
-  padding: 50px 0;
-}
-
-.produit__link {
+.buy__button {
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  font-size: 19px;
-  line-height: 23px;
+  font-size: 16px;
   color: #ffffff;
   text-decoration: none;
-  background: #02b2fe;
-  border-radius: 17px;
-  padding: 15px 41px;
+  background: yellowgreen;
+  border-radius: 8px;
+  padding: 8px 20px;
+  border: none;
 }
 
-.modeles__more {
-  width: 467px;
-  height: 78px;
+.see-more__button__container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  margin-top: 8px;
+}
+
+.see-more__button {
+  width: 100%;
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  font-size: 39px;
-  line-height: 48px;
+  font-size: 100%;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 65px;
-  text-align: center;
   text-decoration: none;
   margin: 0 auto 0 auto;
-  padding: 19px 50px;
+  padding: 10px 16px;
   color: #000000;
+  background-color: lightgray;
 }
 
-.valeur {
-  height: 741px;
-  width: 100vw;
-  background-image: url(/background_lyocell.b0918d9b.png);
-  background-size: cover;
+.values {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 75%;
+  margin-top: 70px;
+  overflow: hidden;
 }
 
-.valeur__text {
-  padding: 192px 0 0 84px;
-  width: 569px;
-  height: 302px;
+.values__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.values__text {
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  width: 50%;
+  position: absolute;
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 74px;
-  color: #ffffff;
-}
-
-.collaborateur {
-  padding: 120px 0 0 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.fournisseurs {
-  height: 454px;
-  width: 49.8%;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-}
-
-.fournisseurs__title {
-  margin: 0;
-  font-family: AdiHaus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 50px;
-  text-transform: uppercase;
-  padding: 20px 0 0 20px;
-  color: #000000;
-}
-
-.fournisseurs__image {
-  height: 137px;
-  width: 525px;
-  padding: 70px 0 0 170px;
-}
-
-.position {
-  padding: 90px 0 0 300px;
-}
-
-.fournisseurs__link {
-  padding: 18px 36px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  font-family: AdiHaus;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: black;
-}
-
-.labels {
-  height: 454px;
-  width: 49.8%;
-  background-color: black;
-}
-
-.labels__title {
-  margin: 0;
-  font-family: AdiHaus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 50px;
-  text-transform: uppercase;
-  text-align: right;
-  padding: 20px 20px 0 0;
-  color: #ffffff;
-}
-
-.labels__image {
-  height: 137px;
-  width: 525px;
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 0 0 80px;
-}
-
-.labels__link {
-  padding: 18px 36px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  font-family: AdiHaus;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  background-color: #ffffff;
+  font-size: 5vw;
+  color: white;
 }
 
 /*# sourceMappingURL=/homepage.a623bc92.css.map */
