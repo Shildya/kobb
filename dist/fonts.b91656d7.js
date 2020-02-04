@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../css/fonts.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../css/fonts.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/adihaus_regular.ttf":[["adihaus_regular.390a3cdd.ttf","../fonts/adihaus_regular.ttf"],"../fonts/adihaus_regular.ttf"],"./../fonts/adihaus_italic.ttf":[["adihaus_italic.6f8c170e.ttf","../fonts/adihaus_italic.ttf"],"../fonts/adihaus_italic.ttf"],"./../fonts/adihaus_oblique.ttf":[["adihaus_oblique.fc723e34.ttf","../fonts/adihaus_oblique.ttf"],"../fonts/adihaus_oblique.ttf"],"./../fonts/adihaus_bold.ttf":[["adihaus_bold.9f86fd77.ttf","../fonts/adihaus_bold.ttf"],"../fonts/adihaus_bold.ttf"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\adihaus_regular.ttf":[["adihaus_regular.390a3cdd.ttf","../fonts/adihaus_regular.ttf"],"../fonts/adihaus_regular.ttf"],"./..\\fonts\\adihaus_italic.ttf":[["adihaus_italic.6f8c170e.ttf","../fonts/adihaus_italic.ttf"],"../fonts/adihaus_italic.ttf"],"./..\\fonts\\adihaus_oblique.ttf":[["adihaus_oblique.fc723e34.ttf","../fonts/adihaus_oblique.ttf"],"../fonts/adihaus_oblique.ttf"],"./..\\fonts\\adihaus_bold.ttf":[["adihaus_bold.9f86fd77.ttf","../fonts/adihaus_bold.ttf"],"../fonts/adihaus_bold.ttf"],"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60415" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59806" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/fonts.b91656d7.js.map
