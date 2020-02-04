@@ -33,19 +33,25 @@
   height: 80%;
 
   &.loaded {
-      animation: colorChange 0s steps(4, end) 0s infinite;
+      animation: colorChange 8s ease 0s infinite;
   }
 }
 
 @keyframes colorChange {
-  25% {
-      filter: hue-rotate(90deg); 
+  17% {
+      filter: hue-rotate(120deg); 
   };
-  50% {
-      filter: hue-rotate(180deg);
+  33% {
+      filter: hue-rotate(120deg);
   }
-  75% {
-      filter: hue-rotate(270deg);
+  50% {
+      filter: hue-rotate(240deg);
+  }
+  67% {
+      filter: hue-rotate(240deg);
+  }
+  83% {
+      filter: hue-rotate(360deg);
   }
   100% {
       filter: hue-rotate(360deg);
