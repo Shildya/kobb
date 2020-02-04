@@ -162,7 +162,7 @@ span:hover .burger-menu span::before, span:hover .burger-menu span::after {
   width: 100%;
 }
 .menu li a {
-  height: calc((100vh - 50px) / 3);
+  height: calc((100% - 50px) / 3);
   line-height: calc((100vh - 50px) / 3);
   color: black;
   text-decoration: none;
