@@ -172,7 +172,7 @@ header {
       background-color: white;
       width: 100%;
       a {
-          height: calc((100vh - 50px) / 3);
+          height: calc((100% - 50px) / 3);
           line-height: calc((100vh - 50px) / 3);
           //padding: 0 20px;
           color: black;
