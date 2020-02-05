@@ -4,40 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.scss">
     <link rel="stylesheet" href="../css/custom-system.scss">
-    <link rel="stylesheet" href="../css/reset.css">
     <script type="text/javascript" src="../js/custom-system.js"></script>
+    <script type="text/javascript" src="../js/burger-menu.js"></script>
     <title>KOBB - Personnalisation</title>
 </head>
 
 <body>
-
-    <div class="customization__container">
-
-        <div class="img__container">
-            <img src="../img/vest1.jpg" alt="rip" class="image1">
-            <span class="color"></span>
-            <img src="../img/vest1-black.jpg" alt="" class="image1-black">
-            <img src="../img/vest1-white.jpg" alt="" class="image1-white">
+    <!-- HEADER -->
+    <header>
+        <div class="burger-menu">
+            <span></span>
+        </div>
+        <a href="index.html">
+        <svg version="1.1" class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 275.5 289.31" style="enable-background:new 0 0 275.5 289.31;" xml:space="preserve">
+            <g>
+                <path d="M228.97,0h-36.01L90.48,74.64H66.24L93.36,0H62.88L0,172.81h30.48l27.36-74.88h25.2l41.85,41.14l8.21-22.56l-23.18-27.47
+                    L228.97,0z"/>
+                <path d="M222.39,116.5h-89.28l-8.21,22.56h85.73c29.04,0,38.64,7.68,31.2,28.32c-6.72,19.92-25.68,24.72-56.64,24.72h-49.2
+                    l11.17-30.48h-30.47L70.23,289.31h111.84c33.12,0,59.76-8.64,70.56-36.96c8.4-22.8,0-42.49-23.76-48.97
+                    c21.12-4.56,36.24-15.36,43.2-34.08C283.11,138.82,267.75,116.5,222.39,116.5z M224.55,245.39c-6,16.32-18.96,21.36-50.16,21.36
+                    h-65.52l19.44-53.53h59.28C219.75,213.22,231.99,224.27,224.55,245.39z"/>
+            </g>
+        </svg>
+      </a>
+      <div class="header__menu">
+        <div class="header__sepline"></div>
+        <a href="index.html" class="header__link">Accueil</a>
+        <div class="header__sepline"></div>
+        <a href="" class="header__link">Produits</a>
+        <div class="header__sepline"></div>
+        <a href="" class="header__link">à Propos</a>
+        <div class="header__sepline"></div>
+      </div>
+        <!-- LOGIN ICON -->
+      <svg version="1.1" class="login-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 164.39 208" style="enable-background:new 0 0 164.39 208;" xml:space="preserve">
+          <g>
+              <path d="M82.19,119.68c27.01,0,45.57,13.52,56.75,41.32c4.44,11.04,6.79,22.28,8.04,31H17.41c1.22-8.55,3.5-19.52,7.75-30.3
+                  C36.3,133.42,54.96,119.68,82.19,119.68 M82.19,103.68C0,103.68,0,208,0,208h164.39C164.39,208,164.39,103.68,82.19,103.68
+                  L82.19,103.68z"/>
+          </g>
+          <g>
+              <path d="M81.8,16c17.22,0,31.24,14.01,31.24,31.24S99.03,78.48,81.8,78.48S50.56,64.46,50.56,47.24S64.58,16,81.8,16 M81.8,0
+                  C55.71,0,34.56,21.15,34.56,47.24S55.71,94.48,81.8,94.48c26.09,0,47.24-21.15,47.24-47.24S107.89,0,81.8,0L81.8,0z"/>
+          </g>
+      </svg>
+      <!-- CART ICON -->
+      <svg version="1.1" class="cart-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 176 208" style="enable-background:new 0 0 176 208;" xml:space="preserve">
+          <path d="M112,16v16H64V16H112 M128,0H48v48h80V0L128,0z"/>
+          <path d="M160,48v144H16V48H160 M176,32H0v176h176V32L176,32z"/>
+      </svg>
+    </header>
+    <!-- MENU -->
+    <ul class="menu">
+        <li><a href="index.html" class="home">ACCUEIL</a></li>
+        <li><a href="#" class="products">PRODUITS</a></li>
+        <li><a href="#" class="articles">À PROPOS</a></li>
+      </ul>
+    <!-- CUSTOM SYSTEM -->
+    <section class="customization">
+        <!-- IMAGE CONTAINER -->
+        <div class="image__container">
+            <!-- RIGHT CUFF -->
+            <img src="../img/right_cuff.png" class="image">
+            <img src="../img/right_cuff-black.png" class="black">
+            <img src="../img/right_cuff-white.png" class="white">
+            <!-- RIGHT SLEEVE -->
+            <img src="../img/right_sleeve.png" class="image">
+            <img src="../img/right_sleeve-black.png" class="black">
+            <img src="../img/right_sleeve-white.png" class="white">
+            <!-- BOTTOM -->
+            <img src="../img/bottom.png" class="image">
+            <img src="../img/bottom-black.png" class="black">
+            <img src="../img/bottom-white.png" class="white">
+            <!-- CHEST -->
+            <img src="../img/chest.png" class="image">
+            <img src="../img/chest-black.png" class="black">
+            <img src="../img/chest-white.png" class="white">
+            <!-- COLLAR -->
+            <img src="../img/collar.png" class="image">
+            <img src="../img/collar-black.png" class="black">
+            <img src="../img/collar-white.png" class="white">
+            <!-- ZIPPERS -->
+            <img src="../img/zippers.png" class="image">
+            <img src="../img/zippers-black.png" class="black">
+            <img src="../img/zippers-white.png" class="white">
+            <!-- LOGO -->
+            <img src="../img/logo.png" class="image">
+            <img src="../img/logo-black.png" class="black">
+            <img src="../img/logo-white.png" class="white">
+            <!-- LEFT CUFF -->
+            <img src="../img/left_cuff.png" class="image">
+            <img src="../img/left_cuff-black.png" class="black">
+            <img src="../img/left_cuff-white.png" class="white">
+            <!-- LEFT SLEEVE -->
+            <img src="../img/left_sleeve.png" class="image">
+            <img src="../img/left_sleeve-black.png" class="black">
+            <img src="../img/left_sleeve-white.png" class="white">
+            <!-- RIGHT BANDS -->
+            <img src="../img/right_bands.png" class="image">
+            <img src="../img/right_bands-black.png" class="black">
+            <img src="../img/right_bands-white.png" class="white">
+            <!-- LEFT BANDS -->
+            <img src="../img/left_bands.png" class="image">
+            <img src="../img/left_bands-black.png" class="black">
+            <img src="../img/left_bands-white.png" class="white">
         </div>
 
         <div class="custom-system__container">
-            <h1 class="part"><span class="arrow arrow-left"><</span>&nbsp;&nbsp;Manches&nbsp;&nbsp;<span class="arrow arrow-right">></span></h1>
+            <div part__title__container>
+                <p class="arrow left-arrow">X</p>
+                <h1 class="part__title"></h1>
+                <p class="arrow right-arrow">X</p>
+            </div>
+            
             <h2>Teinte</h2>
             <span class="hue__bar">
-                <input id="hue__input" name="hue" type="range" min="0" max="1530" value="1">
+                <input id="hue__input" name="hue" type="range" min="0" max="360" value="1">
             </span>
             <h2>Saturation</h2>
             <span class="saturate__bar">
-                <input id="saturate__input" name="saturate" type="range" min="0" max="125" value="125">
+                <input id="saturate__input" name="saturate" type="range" min="0" max="100" value="100">
             </span>    
             <h2>Luminosité</h2>
             <span class="luminosity__bar">
                 <input id="luminosity__input" name="luminosity" type="range" min="-100" max="100" value="0">
             </span>    
         </div>
-        
-    </div>
+    
+    </section>
+    
+
 </body>
 </html>

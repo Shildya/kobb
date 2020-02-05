@@ -2,8 +2,9 @@
 
 @mixin imgSize {
     position: absolute;
-    width: 375px;
-    height: 375px;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
 
 @mixin inputStyle {
@@ -24,6 +25,10 @@
 
 // CONTAINERS //
 
+.customization {
+    margin-top: 50px;
+}
+
 .customization__container {
     display: flex;
     flex-direction: row;
@@ -32,9 +37,10 @@
     
 }
 
-.img__container {
-    width: 375px;
-    height: 375px;
+.image__container {
+    width: 300px;
+    height: 300px;
+    position: relative;
 }
 
 .custom-system__container {
@@ -46,24 +52,17 @@
 
 // IMAGES //
 
-.image1 {
+.image {
     @include imgSize;
     filter: saturate(1.25);
 }
 
-.image1-black, .image1-white {
+.black, .white {
     @include imgSize;
     opacity: 0;
 }
 
-
 // COLOR LAYERS //
-
-.color {
-    @include imgSize;
-    mix-blend-mode: hue;
-}
-
 
 // INPUTS //
 
@@ -75,13 +74,14 @@
 // BARS //
 
 .hue__bar {
-    background-image: linear-gradient(to right, red, magenta, blue, cyan, green, yellow, red);
+    background-image: linear-gradient(to right, red, yellow, green, cyan, blue, magenta, red);
     @include barStyle;
 }
 
 .saturate__bar {
     background-image: linear-gradient(to right, gray, red);
-    @include barStyle
+    @include barStyle;
+    fill: green;
 }
 
 .luminosity__bar {
