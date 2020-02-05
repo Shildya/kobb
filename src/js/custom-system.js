@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var rightArrow = document.querySelector('.right-arrow');
 
     leftArrow.addEventListener('click', function() {
+
         if (counter > 0) {
 
             counter--;
@@ -43,11 +44,20 @@ document.addEventListener('DOMContentLoaded', function() {
             hueInput.value = lastHue[counter];
             saturateInput.value = lastSaturation[counter];
             luminosityInput.value = lastLuminosity[counter];
-            
-        }
+            saturateBar.style.filter = 'hue-rotate('+hueInput.value+'deg)';
+            rightArrow.style.fill = 'black';
+
+
+        };
+
+        if (counter == 0) {
+            leftArrow.style.fill = 'gray';
+        };
+
     });
 
     rightArrow.addEventListener('click', function() {
+
         if (counter < 10) {
 
             counter++;
@@ -58,8 +68,15 @@ document.addEventListener('DOMContentLoaded', function() {
             hueInput.value = lastHue[counter];
             saturateInput.value = lastSaturation[counter];
             luminosityInput.value = lastLuminosity[counter];
+            saturateBar.style.filter = 'hue-rotate('+hueInput.value+'deg)';
+            leftArrow.style.fill = 'black';
 
+        };
+
+        if (counter == 10) {
+            rightArrow.style.fill = 'gray';
         }
+
     });
 
     // HUE SYSTEM //

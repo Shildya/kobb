@@ -62,7 +62,9 @@
         <li><a href="/index.html" class="home">ACCUEIL</a></li>
         <li><a href="#" class="products">PRODUITS</a></li>
         <li><a href="#" class="articles">À PROPOS</a></li>
-      </ul>
+    </ul>
+    <!-- TITLE -->
+    <p class="customization__title">Personnalisation</p>
     <!-- CUSTOM SYSTEM -->
     <section class="customization">
         <!-- IMAGE CONTAINER -->
@@ -114,26 +116,44 @@
         </div>
 
         <div class="custom-system__container">
-            <div part__title__container="">
-                <p class="arrow left-arrow">X</p>
-                <h1 class="part__title"></h1>
-                <p class="arrow right-arrow">X</p>
+
+            <div class="settings__container">
+
+                <div class="part__title__container">
+                    <svg version="1.1" class="arrow left-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 192 320" style="enable-background:new 0 0 192 320;" xml:space="preserve">
+<polygon points="192,32.4 159.7,0 0,160 0,160 0,160 159.7,320 192,287.6 64.7,160 "></polygon>
+                    </svg>
+                    <h1 class="part__title"></h1>
+                    <svg version="1.1" class="arrow right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 192 320" style="enable-background:new 0 0 192 320;" xml:space="preserve">
+<polygon points="0,32.4 32.3,0 192,160 192,160 192,160 32.3,320 0,287.6 127.3,160 "></polygon>
+                    </svg>
+                </div>
+
+                <div class="hsl__container">
+                    <div class="hue__container">
+                        <h2 class="hsl__title">Teinte</h2>
+                        <span class="hue__bar">
+                            <input id="hue__input" name="hue" type="range" min="0" max="360" value="1">
+                        </span>
+                    </div>
+                        <div class="saturation__container">
+                        <h2 class="hsl__title">Saturation</h2>
+                        <span class="saturate__bar">
+                            <input id="saturate__input" name="saturate" type="range" min="0" max="100" value="100">
+                        </span>
+                    </div>
+                    <div class="luminosity__container">
+                        <h2 class="hsl__title">Luminosité</h2>
+                        <span class="luminosity__bar">
+                            <input id="luminosity__input" name="luminosity" type="range" min="-100" max="100" value="0">
+                        </span>
+                    </div>
+                </div>
+
             </div>
-            
-            <h2>Teinte</h2>
-            <span class="hue__bar">
-                <input id="hue__input" name="hue" type="range" min="0" max="360" value="1">
-            </span>
-            <h2>Saturation</h2>
-            <span class="saturate__bar">
-                <input id="saturate__input" name="saturate" type="range" min="0" max="100" value="100">
-            </span>    
-            <h2>Luminosité</h2>
-            <span class="luminosity__bar">
-                <input id="luminosity__input" name="luminosity" type="range" min="-100" max="100" value="0">
-            </span>    
+
         </div>
-    
+        
     </section>
     
 
