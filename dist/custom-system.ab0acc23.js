@@ -151,7 +151,17 @@ document.addEventListener('DOMContentLoaded', function () {
       hueInput.value = lastHue[counter];
       saturateInput.value = lastSaturation[counter];
       luminosityInput.value = lastLuminosity[counter];
+      saturateBar.style.filter = 'hue-rotate(' + hueInput.value + 'deg)';
+      rightArrow.style.fill = 'black';
     }
+
+    ;
+
+    if (counter == 0) {
+      leftArrow.style.fill = 'gray';
+    }
+
+    ;
   });
   rightArrow.addEventListener('click', function () {
     if (counter < 10) {
@@ -163,6 +173,14 @@ document.addEventListener('DOMContentLoaded', function () {
       hueInput.value = lastHue[counter];
       saturateInput.value = lastSaturation[counter];
       luminosityInput.value = lastLuminosity[counter];
+      saturateBar.style.filter = 'hue-rotate(' + hueInput.value + 'deg)';
+      leftArrow.style.fill = 'black';
+    }
+
+    ;
+
+    if (counter == 10) {
+      rightArrow.style.fill = 'gray';
     }
   }); // HUE SYSTEM //
 
@@ -224,7 +242,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "64645" + '/');
+
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49458" + '/');
+
 
   ws.onmessage = function (event) {
     checkedAssets = {};
