@@ -1,0 +1,430 @@
+.lyocell_background {
+  height: 50%;
+  padding: 5% 0 0 0;
+  background-image: url(/lyocell_background.00cc11bb.png);
+  background-size: cover;
+}
+.lyocell_background h1 {
+  width: 437px;
+  margin: 0 0 0 5%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 75px;
+  line-height: 92px;
+  background: #40f99b;
+  border-radius: 10px;
+  color: #000000;
+}
+@media (max-width: 1000px) {
+  .lyocell_background h1 {
+    font-size: 50px;
+    width: 313px;
+    line-height: 67px;
+  }
+}
+@media (max-width: 600px) {
+  .lyocell_background h1 {
+    font-size: 35px;
+    width: 220px;
+    line-height: 40px;
+  }
+}
+
+.description {
+  margin-top: 26px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.histoire {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+}
+.histoire h1 {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 63px;
+  text-transform: uppercase;
+  text-align: left;
+  width: 95%;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .histoire h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .histoire h1 {
+    font-size: 30px;
+  }
+}
+.histoire p {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  width: 560px;
+  height: 366.32px;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .histoire p {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+.histoire em {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #40f99b;
+}
+.histoire img {
+  width: 560px;
+  height: 366.32px;
+}
+@media (max-width: 1178px) {
+  .histoire img {
+    width: auto;
+    height: auto;
+  }
+}
+
+.fibre {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+}
+.fibre h1 {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 63px;
+  text-transform: uppercase;
+  width: 95%;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .fibre h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .fibre h1 {
+    font-size: 30px;
+  }
+}
+.fibre p {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  width: 560px;
+  height: 366.32px;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .fibre p {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+.fibre em {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #40f99b;
+}
+.fibre img {
+  width: 560px;
+  height: 366.32px;
+}
+@media (max-width: 1178px) {
+  .fibre img {
+    width: auto;
+    height: auto;
+  }
+}
+
+.lyocell_avantages {
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lyocell_avantages h1 {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 63px;
+  text-transform: uppercase;
+  width: 95%;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .lyocell_avantages h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .lyocell_avantages h1 {
+    font-size: 30px;
+  }
+}
+.lyocell_avantages .avantages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80%;
+}
+.lyocell_avantages .avantages .avantages_type {
+  margin: 50px 0 0 0;
+  height: auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .lyocell_avantages .avantages .avantages_type {
+    width: auto;
+    height: auto;
+    margin: 20px 10px;
+    justify-content: left;
+  }
+}
+.lyocell_avantages .avantages .avantages_type .petit {
+  height: 80px;
+}
+.lyocell_avantages .avantages .avantages_type img {
+  height: 100px;
+}
+.lyocell_avantages .avantages .avantages_description {
+  margin: 20px 0 0 0;
+  height: 167px;
+}
+.lyocell_avantages .avantages .avantages_description h2 {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 31px;
+  color: #000000;
+}
+.lyocell_avantages .avantages .avantages_description p {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  width: 100%;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .lyocell_avantages .avantages .avantages_description p {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.lyocell_differences {
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.lyocell_differences h1 {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 63px;
+  text-transform: uppercase;
+  width: 95%;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .lyocell_differences h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .lyocell_differences h1 {
+    font-size: 30px;
+  }
+}
+.lyocell_differences .differences {
+  width: 95%;
+  height: auto;
+}
+.lyocell_differences .differences .differences_type h2 {
+  margin: 30px 0;
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+.lyocell_differences .differences .differences_type p {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .lyocell_differences .differences .differences_type p {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+.lyocell_differences .differences .differences_type em {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #40f99b;
+}
+
+.fournisseurs_background {
+  margin: 80px 0 0 0;
+  height: 50%;
+  padding: 5% 0 0 0;
+  background-image: url(/fournisseurs.5ffe9b40.png);
+  background-size: cover;
+}
+.fournisseurs_background h1 {
+  width: 550px;
+  margin: 0 0 0 5%;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 75px;
+  line-height: 92px;
+  background: #40f99b;
+  border-radius: 10px;
+  color: #000000;
+}
+@media (max-width: 1000px) {
+  .fournisseurs_background h1 {
+    font-size: 50px;
+    width: 365px;
+    line-height: 67px;
+  }
+}
+@media (max-width: 600px) {
+  .fournisseurs_background h1 {
+    font-size: 35px;
+    width: 260px;
+    line-height: 40px;
+  }
+}
+
+.fournisseurs {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: left;
+}
+.fournisseurs .fournisseurs_text {
+  width: 600px;
+}
+@media (max-width: 1199px) {
+  .fournisseurs .fournisseurs_text {
+    width: 95%;
+  }
+}
+.fournisseurs .fournisseurs_text h1 {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 63px;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .fournisseurs .fournisseurs_text h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .fournisseurs .fournisseurs_text h1 {
+    font-size: 30px;
+  }
+}
+.fournisseurs .fournisseurs_text p {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 20px 0 0 0;
+  color: #000000;
+}
+@media (max-width: 1178px) {
+  .fournisseurs .fournisseurs_text p {
+    width: auto;
+    height: auto;
+  }
+}
+.fournisseurs .fournisseurs_text em {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #40f99b;
+}
+.fournisseurs .fournisseurs_img {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1199px) {
+  .fournisseurs .fournisseurs_img {
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=/lyocell.9de4e0a4.css.map */
