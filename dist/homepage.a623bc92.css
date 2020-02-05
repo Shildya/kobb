@@ -234,6 +234,9 @@
   padding: 8px 20px;
   border: none;
 }
+.buy__button:hover {
+  opacity: 0.75;
+}
 
 .see-more__button__container {
   position: absolute;
@@ -256,6 +259,9 @@
   margin: 0 auto 0 auto;
   padding: 10px 16px;
   color: #000000;
+  background-color: whitesmoke;
+}
+.see-more__button:hover {
   background-color: lightgray;
 }
 

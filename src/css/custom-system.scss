@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
 
-    @media (max-width: 760px) {
+    @media (max-width: 600px) {
         display: block;
         margin-top: 25px;
     }
@@ -51,7 +51,7 @@
     min-height: 300px;
     position: relative;
 
-    @media (max-width: 760px) {
+    @media (max-width: 600px) {
         left: 50%;
         transform: translateX(-50%);
     }
@@ -64,7 +64,7 @@
     position: relative;
     width: 197px;
 
-    @media (max-width: 760px) {
+    @media (max-width: 600px) {
         left: 50%;
         transform: translateX(-50%);
     }
@@ -72,9 +72,9 @@
 
 .settings__container {
     position: absolute;
-    margin-top: 60px;
+    margin-top: 10px;
 
-    @media (max-width: 760px) {
+    @media (max-width: 600px) {
         margin-top: 10px;
     }
 }
@@ -101,7 +101,7 @@
 .left-arrow {
     position: absolute;
     left: 0;
-    fill: gray;
+    opacity: 0;
 }
 
 .right-arrow {
@@ -186,4 +186,71 @@
 
 .menu {
     top: 50px;
+}
+
+.size__title {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-family: AdiHaus;
+    font-style: italic;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.sizes__container {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 235px;
+    margin-top: 55px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.size__button {
+    background-color: transparent;
+    outline: 1px solid gray;
+    color: gray;
+    height: 30px;
+    width: 30px;
+    border: none;
+    font-family: AdiHaus;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.5;
+    text-align: center;
+
+    &.selected {
+        outline: 1px solid black;
+        color: black;
+    }
+}
+
+
+
+.buy__button__container {
+    width: 145px;
+    margin-top: 100px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.buy__button {
+font-family: AdiHaus;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+text-decoration: none;
+background: yellowgreen;
+border-radius: 8px;
+padding: 8px 20px;
+border: none;
+
+&:hover {
+    filter: brightness(80%);
+    }
 }

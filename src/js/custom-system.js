@@ -45,13 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
             saturateInput.value = lastSaturation[counter];
             luminosityInput.value = lastLuminosity[counter];
             saturateBar.style.filter = 'hue-rotate('+hueInput.value+'deg)';
-            rightArrow.style.fill = 'black';
+            rightArrow.style.opacity = 1;
 
 
         };
 
         if (counter == 0) {
-            leftArrow.style.fill = 'gray';
+            leftArrow.style.opacity = 0;
         };
 
     });
@@ -69,12 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
             saturateInput.value = lastSaturation[counter];
             luminosityInput.value = lastLuminosity[counter];
             saturateBar.style.filter = 'hue-rotate('+hueInput.value+'deg)';
-            leftArrow.style.fill = 'black';
+            leftArrow.style.opacity = 1;
 
         };
 
         if (counter == 10) {
-            rightArrow.style.fill = 'gray';
+            rightArrow.style.opacity = 0;
         }
 
     });
