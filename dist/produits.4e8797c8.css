@@ -68,15 +68,23 @@ main {
   display: flex;
   flex-direction: row;
 }
-@media (max-width: 1024px) {
-  main {
-    flex-direction: column;
-  }
-}
 main a {
   width: 100%;
   height: 100%;
   text-decoration: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .container {
+    display: block;
+    vertical-align: middle;
+  }
 }
 
 .prefabriques {
@@ -86,6 +94,11 @@ main a {
   box-sizing: border-box;
   background-image: url(/vestes.a7958f38.svg);
   background-size: cover;
+}
+@media (max-width: 1200px) {
+  .prefabriques {
+    height: 75%;
+  }
 }
 .prefabriques h1 {
   padding: 22px 0 0 16px;
@@ -97,6 +110,11 @@ main a {
   text-transform: uppercase;
   color: #000000;
 }
+@media (max-width: 1200px) {
+  .prefabriques h1 {
+    font-size: 35px;
+  }
+}
 .prefabriques p {
   padding: 10px 0 0 16px;
   width: 80%;
@@ -107,6 +125,23 @@ main a {
   line-height: 25px;
   color: #000000;
 }
+@media (max-width: 1200px) {
+  .prefabriques p {
+    font-size: 12px;
+  }
+}
+
+.ou {
+  font-family: AdiHaus;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 63px;
+  text-transform: uppercase;
+  padding: 2%;
+  text-align: center;
+  color: #000000;
+}
 
 .personnalises {
   width: 100%;
@@ -114,8 +149,10 @@ main a {
   border: 5px solid #000000;
   box-sizing: border-box;
 }
-.personnalises:hover {
-  background-color: red;
+@media (max-width: 1200px) {
+  .personnalises {
+    height: 75%;
+  }
 }
 .personnalises h1 {
   padding: 22px 0 0 16px;
@@ -127,6 +164,16 @@ main a {
   text-transform: uppercase;
   color: #000000;
 }
+@media (max-width: 1200px) {
+  .personnalises h1 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 900px) {
+  .personnalises h1 {
+    font-size: 35px;
+  }
+}
 .personnalises p {
   padding: 10px 0 0 16px;
   width: 80%;
@@ -136,6 +183,11 @@ main a {
   font-size: 20px;
   line-height: 25px;
   color: #000000;
+}
+@media (max-width: 1200px) {
+  .personnalises p {
+    font-size: 12px;
+  }
 }
 
 footer {
