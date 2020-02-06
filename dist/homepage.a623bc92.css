@@ -259,15 +259,15 @@
   font-style: normal;
   font-weight: bold;
   font-size: 100%;
-  border: 1px solid #000000;
   box-sizing: border-box;
-  border-radius: 65px;
   text-decoration: none;
   margin-left: 50%;
   transform: translateX(-50%);
   padding: 10px 16px;
   color: #000000;
-  background-color: whitesmoke;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 .see-more__button:hover {
   background-color: lightgray;
@@ -302,6 +302,27 @@
   font-weight: bold;
   font-size: 30px;
   color: white;
+}
+
+.values_learn-more {
+  background-color: white;
+  color: black;
+  margin-left: 20px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: AdiHaus;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.values_learn-more:hover {
+  filter: brightness(80%);
 }
 
 /*# sourceMappingURL=/homepage.a623bc92.css.map */
