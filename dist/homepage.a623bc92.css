@@ -109,7 +109,8 @@
 }
 @media (max-width: 666px) and (min-height: 404px) {
   .button.customize {
-    margin-top: 3vh;
+    margin-top: -50px;
+    display: block;
   }
 }
 .button.learn-more {
@@ -120,7 +121,8 @@
 @media (max-width: 666px) and (min-height: 404px) {
   .button.learn-more {
     margin-left: 0px;
-    margin-top: 2vh;
+    margin-top: 25px;
+    display: block;
   }
 }
 
@@ -292,7 +294,7 @@
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  font-size: 5vw;
+  font-size: 30px;
   color: white;
 }
 
