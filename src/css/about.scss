@@ -1,450 +1,454 @@
 .lyocell_background {
-    height: 50%;
-    padding: 5% 0 0 0;
-    background-image: url(../img/lyocell_background.png);
-    background-size: cover;
-  
-    h1 {
-      width: 437px;
-      margin: 0 0 0 5%;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 75px;
-      line-height: 75px;
-      background: #40f99b;
-      border-radius: 8px;
-      color: #000000;
-  
-      @media (max-width: 1000px) {
-        font-size: 50px;
-        width: 313px;
-        line-height: 50px;
-      }
-  
-      @media (max-width: 600px) {
-        font-size: 35px;
-        width: 220px;
-        line-height: 35px;
-      }
+  height: 50%;
+  padding: 5% 0 0 0;
+  background-image: url(../img/lyocell_background.png);
+  background-size: cover;
+
+  h1 {
+    width: 437px;
+    margin: 0 0 0 5%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 75px;
+    background: #40f99b;
+    border-radius: 8px;
+    color: #000000;
+
+    @media (max-width: 1000px) {
+      font-size: 50px;
+      width: 313px;
+      line-height: 50px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 35px;
+      width: 220px;
+      line-height: 35px;
     }
   }
-  
-  .description {
-    margin-top: 26px;
+}
+
+.description {
+  margin-top: 26px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.lenzing-logo {
+  width: 300px;
+}
+
+.history {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+
+  h1 {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 63px;
+    text-transform: uppercase;
+    text-align: left;
     width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    overflow: hidden;
+    color: #000000;
+
+    @media (max-width: 1178px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
   }
 
-  .lenzing-logo {
-      width: 300px;
-  }
-  
-  .history {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    justify-content: center;
-  
-    h1 {
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 51px;
-      line-height: 63px;
-      text-transform: uppercase;
-      text-align: left;
-      width: 95%;
-      color: #000000;
-  
-      @media (max-width: 1178px) {
-        font-size: 40px;
-      }
-  
-      @media (max-width: 600px) {
-        font-size: 30px;
-      }
-    }
-  
-    p {
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-      width: 560px;
-      height: 366.32px;
-      color: #000000;
-  
-      @media (max-width: 1178px) {
-        width: auto;
-        height: auto;
-        margin-bottom: 30px;
-      }
-    }
-  
-    em {
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 22px;
-  
-      color: #40f99b;
-    }
-  
-    img {
-      width: 560px;
-      height: 366.32px;
-  
-      @media (max-width: 1178px) {
-        width: auto;
-        height: auto;
-      }
-    }
-  }
-  
-  .fibre {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    justify-content: center;
-  
-    h1 {
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 51px;
-      line-height: 63px;
-      text-transform: uppercase;
-      width: 95%;
-      color: #000000;
-  
-      @media (max-width: 1178px) {
-        font-size: 40px;
-      }
-  
-      @media (max-width: 600px) {
-        font-size: 30px;
-      }
-    }
-  
-    p {
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-      width: 560px;
-      height: 366.32px;
-      color: #000000;
-  
-      @media (max-width: 1178px) {
-        width: auto;
-        height: auto;
-        margin-bottom: 30px;
-      }
-    }
-  
-    em {
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 22px;
-  
-      color: #40f99b;
-    }
-  
-    img {
-      width: 560px;
-      height: 366.32px;
-  
-      @media (max-width: 1178px) {
-        width: auto;
-        height: auto;
-      }
-    }
-  }
-  
-  .lyocell_avantages {
-    margin: 80px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  
-    h1 {
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 51px;
-      line-height: 63px;
-      text-transform: uppercase;
-      width: 95%;
-      color: #000000;
-  
-      @media (max-width: 1178px) {
-        font-size: 40px;
-      }
-  
-      @media (max-width: 600px) {
-        font-size: 30px;
-      }
-    }
-  
-    .avantages {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
-      height: 80%;
-  
-      .avantages_type {
-        margin: 50px 0 0 0;
-        height: auto;
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-  
-        @media (max-width: 800px) {
-          width: auto;
-          height: auto;
-          margin: 20px 10px;
-          justify-content: left;
-        }
-  
-        .petit {
-          height: 80px;
-        }
-  
-        img {
-          height: 100px;
-        }
-      }
-  
-      .avantages_description {
-        margin: 20px 0 0 0;
-        height: 167px;
-  
-        h2 {
-          font-family: AdiHaus;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 25px;
-          line-height: 31px;
-  
-          color: #000000;
-        }
-  
-        p {
-          font-family: AdiHaus;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 18px;
-          line-height: 22px;
-          width: 100%;
-          color: #000000;
-  
-          @media (max-width: 1178px) {
-            width: auto;
-            height: auto;
-            margin-bottom: 30px;
-          }
-        }
-      }
-    }
-  }
-  
-  .lyocell_differences {
-    margin: 80px 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  
-    h1 {
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 51px;
-      line-height: 63px;
-      text-transform: uppercase;
-      width: 95%;
-      color: #000000;
-  
-      @media (max-width: 1178px) {
-        font-size: 40px;
-      }
-  
-      @media (max-width: 600px) {
-        font-size: 30px;
-      }
-    }
-  
-    .differences {
-      width: 95%;
+  p {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    width: 560px;
+    height: 366.32px;
+    color: #000000;
+
+    @media (max-width: 1178px) {
+      width: auto;
       height: auto;
-  
-      .differences_type {
-        h2 {
-          margin: 30px 0;
-          font-family: AdiHaus;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 20px;
-          line-height: 22px;
-  
-          color: #000000;
-        }
-  
-        p {
-          font-family: AdiHaus;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 18px;
-          line-height: 22px;
-  
-          color: #000000;
-  
-          @media (max-width: 1178px) {
-            width: auto;
-            height: auto;
-            margin-bottom: 30px;
-          }
-        }
-  
-        em {
-          font-family: AdiHaus;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 18px;
-          line-height: 22px;
-  
-          color: #40f99b;
-        }
-      }
-    }
-  }
-  
-  .fournisseurs_background {
-    margin: 80px 0 0 0;
-    height: 50%;
-    padding: 5% 0 0 0;
-    background-image: url(../img/fournisseurs.png);
-    background-size: cover;
-  
-    h1 {
-      width: 550px;
-      margin: 0 0 0 5%;
-      text-align: left;
-      text-transform: uppercase;
-      font-family: AdiHaus;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 75px;
-      line-height: 92px;
-      background: #40f99b;
-      border-radius: 10px;
-      color: #000000;
-  
-      @media (max-width: 1000px) {
-        font-size: 50px;
-        width: 365px;
-        line-height: 67px;
-      }
-  
-      @media (max-width: 600px) {
-        font-size: 35px;
-        width: 260px;
-        line-height: 40px;
-      }
+      margin-bottom: 30px;
     }
   }
 
-  .lyocell-production_img {
-      width: 300px;
+  em {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #40f99b;
   }
-  
-  .fournisseurs {
-    margin: 50px;
-    display: flex;
-    flex-wrap: wrap;
+
+  img {
+    width: 560px;
+    height: 366.32px;
+
+    @media (max-width: 1178px) {
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+.fibre {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+
+  h1 {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 63px;
+    text-transform: uppercase;
     width: 95%;
-    justify-content: left;
-  
-    .fournisseurs_text {
-      width: 600px;
-  
-      @media (max-width: 1199px) {
-        width: 95%;
+    color: #000000;
+
+    @media (max-width: 1178px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    width: 560px;
+    height: 366.32px;
+    color: #000000;
+
+    @media (max-width: 1178px) {
+      width: auto;
+      height: auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  em {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #40f99b;
+  }
+
+  img {
+    width: 560px;
+    height: 366.32px;
+
+    @media (max-width: 1178px) {
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+.lyocell_avantages {
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 63px;
+    text-transform: uppercase;
+    width: 95%;
+    color: #000000;
+
+    @media (max-width: 1178px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
+  }
+
+  .avantages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80%;
+
+    .avantages_type {
+      margin: 50px 0 0 0;
+      height: auto;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (max-width: 800px) {
+        width: auto;
+        height: auto;
+        margin: 20px 10px;
+        justify-content: left;
       }
-  
-      h1 {
+
+      .petit {
+        height: 80px;
+      }
+
+      img {
+        height: 100px;
+      }
+    }
+
+    .avantages_description {
+      margin: 20px 0 0 0;
+      height: 167px;
+
+      h2 {
         font-family: AdiHaus;
         font-style: normal;
         font-weight: bold;
-        font-size: 51px;
-        line-height: 63px;
-        text-transform: uppercase;
-        text-align: left;
-        width: 100%;
+        font-size: 25px;
+        line-height: 31px;
+
         color: #000000;
-  
-        @media (max-width: 1178px) {
-          font-size: 40px;
-        }
-  
-        @media (max-width: 600px) {
-          font-size: 30px;
-        }
       }
-  
+
       p {
         font-family: AdiHaus;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
-        margin: 20px 0 0 0;
+        width: 100%;
         color: #000000;
-  
+
         @media (max-width: 1178px) {
           width: auto;
           height: auto;
+          margin-bottom: 30px;
         }
       }
-  
+    }
+  }
+}
+
+.lyocell_differences {
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 63px;
+    text-transform: uppercase;
+    width: 95%;
+    color: #000000;
+
+    @media (max-width: 1178px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
+  }
+
+  .differences {
+    width: 95%;
+    height: auto;
+
+    .differences_type {
+      h2 {
+        margin: 30px 0;
+        font-family: AdiHaus;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 22px;
+
+        color: #000000;
+      }
+
+      p {
+        font-family: AdiHaus;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #000000;
+
+        @media (max-width: 1178px) {
+          width: auto;
+          height: auto;
+          margin-bottom: 30px;
+        }
+      }
+
       em {
         font-family: AdiHaus;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
         line-height: 22px;
-  
+
         color: #40f99b;
       }
     }
-  
-    .fournisseurs_img {
-      width: 600px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-  
-      @media (max-width: 1199px) {
-        margin-top: 30px;
-      }
+  }
+}
+
+.fournisseurs_background {
+  margin: 80px 0 0 0;
+  height: 50%;
+  padding: 5% 0 0 0;
+  background-image: url(../img/fournisseurs.png);
+  background-size: cover;
+
+  h1 {
+    width: 550px;
+    margin: 0 0 0 5%;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 92px;
+    background: #40f99b;
+    border-radius: 10px;
+    color: #000000;
+
+    @media (max-width: 1000px) {
+      font-size: 50px;
+      width: 365px;
+      line-height: 67px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 35px;
+      width: 260px;
+      line-height: 40px;
     }
   }
+}
+
+.lyocell-production_img {
+  width: 300px;
+}
+
+.fournisseurs {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: left;
+
+  @media (max-width: 700px) {
+    margin: 10px;
+  }
+
+  .fournisseurs_text {
+    width: 600px;
+
+    @media (max-width: 1199px) {
+      width: 95%;
+    }
+
+    h1 {
+      font-family: AdiHaus;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 51px;
+      line-height: 63px;
+      text-transform: uppercase;
+      text-align: left;
+      width: 100%;
+      color: #000000;
+
+      @media (max-width: 1178px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font-family: AdiHaus;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      margin: 20px 0 0 0;
+      color: #000000;
+
+      @media (max-width: 1178px) {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    em {
+      font-family: AdiHaus;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+
+      color: #40f99b;
+    }
+  }
+
+  .fournisseurs_img {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1199px) {
+      margin-top: 30px;
+    }
+  }
+}
