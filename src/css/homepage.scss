@@ -101,14 +101,18 @@
   font-size: calc(2vw + 1vh);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  padding: 12px 20px;
+  padding: 16px 24px;
   text-decoration: none;
   border: none;
   text-align: center;
 
   &.customize {
-    background-color: yellowgreen;
-    color: white;
+    background-color: #40f99b;
+    color: black;
+
+    &:hover {
+      filter: brightness(80%);
+    }
 
     @media (max-width: 666px) and (min-height: 404px) {
       margin-top: -50px;
@@ -120,6 +124,10 @@
     background-color: white;
     color: black;
     margin-left: 20px;
+
+    &:hover {
+      filter: brightness(80%);
+    }
 
     @media (max-width: 666px) and (min-height: 404px) {
       margin-left: 0px;
@@ -136,7 +144,7 @@
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
-  font-size: 4.5vw;
+  font-size: 35px;
   line-height: 76px;
   text-align: center;
   margin-left: auto;
@@ -195,7 +203,7 @@
   position: relative;
   height: 50px;
   width: 100%;
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 .text__container {
@@ -211,7 +219,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: white;
+  color: black;
 }
 
 .product__description {
@@ -220,7 +228,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: white;
+  color: black;
   left: 10px;
   text-align: left;
 }
@@ -237,9 +245,9 @@
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  color: #ffffff;
+  color: black;
   text-decoration: none;
-  background: yellowgreen;
+  background: #40f99b;
   border-radius: 8px;
   padding: 8px 20px;
   border: none;
@@ -252,15 +260,14 @@
 // SEE MORE BUTTON //
 
 .see-more__button__container {
+  width: 100%;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
   margin-top: 8px;
 }
 
 .see-more__button {
-  width: 100%;
+  width: 225px;
+  text-align: center;
   font-family: AdiHaus;
   font-style: normal;
   font-weight: bold;
@@ -269,7 +276,8 @@
   box-sizing: border-box;
   border-radius: 65px;
   text-decoration: none;
-  margin: 0 auto 0 auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
   padding: 10px 16px;
   color: #000000;
   background-color: whitesmoke;
