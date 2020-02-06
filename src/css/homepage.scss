@@ -240,6 +240,10 @@
   border-radius: 8px;
   padding: 8px 20px;
   border: none;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 // SEE MORE BUTTON //
@@ -265,7 +269,11 @@
   margin: 0 auto 0 auto;
   padding: 10px 16px;
   color: #000000;
-  background-color: lightgray;
+  background-color: whitesmoke;
+
+  &:hover {
+    background-color: lightgray;
+  }
 }
 
 // VALUES //

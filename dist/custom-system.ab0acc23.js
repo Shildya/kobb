@@ -152,13 +152,13 @@ document.addEventListener('DOMContentLoaded', function () {
       saturateInput.value = lastSaturation[counter];
       luminosityInput.value = lastLuminosity[counter];
       saturateBar.style.filter = 'hue-rotate(' + hueInput.value + 'deg)';
-      rightArrow.style.fill = 'black';
+      rightArrow.style.opacity = 1;
     }
 
     ;
 
     if (counter == 0) {
-      leftArrow.style.fill = 'gray';
+      leftArrow.style.opacity = 0;
     }
 
     ;
@@ -174,13 +174,13 @@ document.addEventListener('DOMContentLoaded', function () {
       saturateInput.value = lastSaturation[counter];
       luminosityInput.value = lastLuminosity[counter];
       saturateBar.style.filter = 'hue-rotate(' + hueInput.value + 'deg)';
-      leftArrow.style.fill = 'black';
+      leftArrow.style.opacity = 1;
     }
 
     ;
 
     if (counter == 10) {
-      rightArrow.style.fill = 'gray';
+      rightArrow.style.opacity = 0;
     }
   }); // HUE SYSTEM //
 
@@ -242,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49458" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55953" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
