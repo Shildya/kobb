@@ -201,6 +201,7 @@
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
+  text-align: left;
 }
 
 .product__title {
@@ -220,7 +221,6 @@
   line-height: 18px;
   color: black;
   left: 10px;
-  text-align: left;
 }
 
 .buy__button__container {
@@ -250,10 +250,11 @@
   width: 100%;
   position: absolute;
   margin-top: 8px;
+  text-align: center;
 }
 
 .see-more__button {
-  width: 225px;
+  white-space: nowrap;
   text-align: center;
   font-family: AdiHaus;
   font-style: normal;
@@ -261,8 +262,6 @@
   font-size: 100%;
   box-sizing: border-box;
   text-decoration: none;
-  margin-left: 50%;
-  transform: translateX(-50%);
   padding: 10px 16px;
   color: #000000;
   background: #ffffff;
